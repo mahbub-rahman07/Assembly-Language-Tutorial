@@ -1,0 +1,15 @@
+.MODEL SMALL
+.STACK 100H
+.DATA
+.CODE
+MAIN PROC 
+	
+	input:
+	mov ah,1
+	int 21h
+	cmp  al,13d
+	jne input
+	
+    
+    MAIN ENDP
+END MAIN
